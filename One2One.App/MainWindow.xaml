@@ -1,0 +1,19 @@
+﻿<Window x:Name="mainWindow" x:Class="One2One.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="One2One Instant Messenger" Height="500" Width="350" Loaded="mainWindow_Loaded">
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" BorderBrush="Black">
+            <MenuItem Header="_Start Server" Click="menuItem_StartStopServer_Click">
+            </MenuItem>            
+            <MenuItem Header="_Network..." Click="menuItem_NetworkSettings_Click" BorderThickness="0">                              
+            </MenuItem>
+        </Menu>
+
+        <TextBox x:Name="sendMessageBox" Text="Enter your message and press RETURN to send..." DockPanel.Dock="Bottom" KeyDown="sendMessageBox_KeyDown" LostFocus="sendMessageBox_LostFocus" GotFocus="sendMessageBox_GotFocus" />
+        <RichTextBox x:Name="receiveMessageBox"  Background="LightGray"/>
+        
+    </DockPanel>
+    
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Name="windowNetworkSettings" x:Class="One2One.App.NetworkSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Network Settings" Height="180" Width="400" ResizeMode="NoResize" Loaded="windowNetworkSettings_Loaded">
+    <Grid>
+        <Label Content="Listen on IP Address:" HorizontalAlignment="Left" Margin="22,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Margin="276,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Connect to IP Address:" HorizontalAlignment="Left" Margin="11,49,0,0" VerticalAlignment="Top"/>
+        <Label Content="Port:" HorizontalAlignment="Left" Margin="276,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxLocalAddress" HorizontalAlignment="Left" Height="23" Margin="146,21,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxExternalAddress" HorizontalAlignment="Left" Height="23" Margin="146,52,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxExternalPort" HorizontalAlignment="Left" Height="23" Margin="316,52,0,0" TextWrapping="Wrap" Text="4321" VerticalAlignment="Top" Width="59" TextAlignment="Center"/>
+        <TextBox x:Name="txtBoxLocalPort" HorizontalAlignment="Left" Height="23" Margin="316,21,0,0" TextWrapping="Wrap" Text="1234" VerticalAlignment="Top" Width="59" TextAlignment="Center"/>
+        <Button x:Name="btnAccept" Content="Accept" HorizontalAlignment="Left" Margin="214,97,0,0" VerticalAlignment="Top" Width="75" Click="btnAccept_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="300,97,0,0" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+        <Button Content="Demo1" HorizontalAlignment="Left" Margin="11,110,0,0" VerticalAlignment="Top" Width="47" Click="Button_Click_1"/>
+        <Button Content="Demo2" HorizontalAlignment="Left" Margin="63,110,0,0" VerticalAlignment="Top" Width="49" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>
